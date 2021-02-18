@@ -3,9 +3,9 @@
   <head>
   	<meta charset="UTF-8">
   	<meta name="og:site_name" content="🤵동영과 👰🏻정빈의 결혼식에 초대합니다">
-  	<link rel="canonical" href="https://itsdy2.github.io/jbeanlovesmev/">
-  	<meta name="twitter:url" content="https://itsdy2.github.io/jbeanlovesmev/">
-  	<meta name="og:url" content="https://itsdy2.github.io/jbeanlovesmev/">
+  	<link rel="canonical" href="https://itsdy2.github.io/mevlovesjbean/">
+  	<meta name="twitter:url" content="https://itsdy2.github.io/mevlovesjbean/">
+  	<meta name="og:url" content="https://itsdy2.github.io/mevlovesjbean/">
   	<title>🤵동영과 👰정빈의 결혼식에 초대합니다</title>
   	<meta name="twitter:title" content="🤵동영과 👰정빈의 결혼식에 초대합니다">
   	<meta name="og:title" content="🤵동영과 👰정빈의 결혼식에 초대합니다">
@@ -15,9 +15,10 @@
   	<meta name="twitter:card" content="2021년 03월 06일 오후 1시 30분 부산 디엘 웨딩홀">
   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
-  	<style>
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  	<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.2.0/lib/p5.min.js"></script>
+    <style>
   		* {
   			word-break: keep-all;
   		}
@@ -27,21 +28,19 @@
   		}
 
   		h1,
-  		h2 {
-        	margin: 2rem;
-  		}
-
-  		h1,
       h2 {
+        margin: 2rem;
         font-size: 1.4em;
         font-family: 'Nanum Myeongjo', serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         font-weight:800 ;
+        text-align: center;
   		}
 
   		p {
       	line-height: 1.8;
+        text-align: center;
   		}
 
   		body {
@@ -49,10 +48,12 @@
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         font-weight:700 ;
+        text-align: center;
   		}
 
   		footer {
   			margin: 2rem;
+        text-align: center;
   		}
 
   		img {
@@ -85,6 +86,12 @@
   			text-align: center;
   		}
 
+      .carousel-inner > .carousel-item > img{
+         /* width: 640px; height: 720px; */
+         position: relative;
+         align: center;
+       }
+
   		#daumRoughmapContainer1610982148266 {
   			width: 80%;
   			max-width: 640px;
@@ -93,12 +100,18 @@
 
   		#parents {
   			margin: 2rem;
-  			line-height: 2.5;
+  			line-height: 2.8;
   		}
 
   		#date {
   			margin: 2rem;
   			line-height: 2;
+  		}
+
+      #date2 {
+  			margin: 1rem;
+        font-size: 0.8rem;
+  			line-height: 1.4;
   		}
 
   		#address {
